@@ -6,13 +6,13 @@
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name.
 * Requires at least: WordPress 4.6, BuddyPress 3.0
-* Tested up to: WordPress 4.9.8, BuddyPress 3.2.0
-* Version: 1.3.5
+* Tested up to: WordPress 5.1, BuddyPress 4.1.0
+* Version: 1.3.9
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 21st September 2018
+* Date: 03rd March 2019
 */
-define('COMPARE_VERSION', '1.3.4');
+define('COMPARE_VERSION', '1.3.8');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 function tc_video_chat_install() {
@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
 <input type="submit" class="button2" value="Chat"/></form>
 <br>
     <div class="info">                              
-        <h3 class="main" title="Click Me!">Info</h3>             
+        <h3 class="main" title="Click Me!">Click me!</h3>             
         <p  class="chatinfo">
 			<strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
 
