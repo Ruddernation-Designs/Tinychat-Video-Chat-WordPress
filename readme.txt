@@ -4,8 +4,8 @@ Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 4.6
-Tested up to: 5.1
-Stable tag: 1.3.9
+Tested up to: 5.1.1
+Stable tag: 1.4.0
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -137,6 +137,10 @@ License is now MIT so feel free to carry this plugin on, Just ask me to add you 
 = 1.3.7 =
 
 * Tested up to Wordpress 5.0.3 with no issues, YouTube still doesn't work due to Tinychat only allowing it to be displayed on their domain.
+
+= 1.4.0 =
+
+* Minor update and hack, To watch YouTube video's please use Firefox or Edge browsers, These have been tested and they're working with videos.
 
 
 == Social Sites ==
