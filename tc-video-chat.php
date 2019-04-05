@@ -4,15 +4,15 @@
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
-* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name.
+* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
 * Requires at least: WordPress 4.6, BuddyPress 3.0
 * Tested up to: WordPress 5.1, BuddyPress 4.1.0
-* Version: 1.3.9
+* Version: 1.4.0
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 03rd March 2019
+* Date: 05th April 2019
 */
-define('COMPARE_VERSION', '1.3.8');
+define('COMPARE_VERSION', '1.3.9');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 function tc_video_chat_install() {
@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
     </div>
 <h2>Popular Rooms</h2>
 <br>
-<h3>beautifulpeople | theglobmob | th3psychward | thesweetspot | phatbooty35 | ruddernation | jasper1</h3>
+<h3>beautifulpeople | theglobmob | th3psychward | thesweetspot | phatbooty35 | ruddernation | jasper1 | ziggystardst | monachechat</h3>
 <?php
 	$room = filter_input(INPUT_POST, 'room');
 	if(preg_match('/^[a-z0-9]/', $room=strtolower($room))) 
@@ -89,7 +89,7 @@ jQuery(document).ready(function() {
 			echo '<p>The Tinychat room needs to be more than 3 characters.</p>'; 
 		}
 		else
-			if (strlen($room) > 26) 
+			if (strlen($room) > 32) 
 			{
 				echo '<p>The Tinychat room needs to be less than 26 characters.</p>';
 			} 
@@ -107,7 +107,7 @@ jQuery(document).ready(function() {
 	z-index:99999999999999;
 	}
 </style>
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="97%" width="100%" allow="geolocation; microphone; camera"></iframe>';
+<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="97%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
             }
         }
 									}
