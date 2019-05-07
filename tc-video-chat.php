@@ -6,13 +6,13 @@
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
 * Requires at least: WordPress 4.6, BuddyPress 3.0
-* Tested up to: WordPress 5.1, BuddyPress 4.1.0
-* Version: 1.4.0
+* Tested up to: WordPress 5.2, BuddyPress 4.1.0
+* Version: 1.4.2
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 05th April 2019
+* Date: 07th May 2019
 */
-define('COMPARE_VERSION', '1.3.9');
+define('COMPARE_VERSION', '1.4.1');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 function tc_video_chat_install() {
@@ -65,6 +65,7 @@ jQuery(document).ready(function() {
 <input type="text" name="room" title="Enter Room Name, If it does not exist then it will create the room for you." tabindex="1" placeholder="Just enter the name of the Tinychat room" autofocus required/>
 <input type="submit" class="button2" value="Chat"/></form>
 <br>
+<p>To watch YouTube video’s please use Firefox or Edge browsers, These have been tested and they’re working with videos.</p>
     <div class="info">                              
         <h3 class="main" title="Click Me!">Click me!</h3>             
         <p  class="chatinfo">
