@@ -5,14 +5,14 @@
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
-* Requires at least: WordPress 4.6, BuddyPress 3.0
-* Tested up to: WordPress 5.2, BuddyPress 4.1.0
-* Version: 1.4.2
+* Requires at least: WordPress 4.6, BuddyPress 4.0
+* Tested up to: WordPress 5.2.2, BuddyPress 4.4.0
+* Version: 1.4.5
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 07th May 2019
+* Date: 30th August 2019
 */
-define('COMPARE_VERSION', '1.4.1');
+define('COMPARE_VERSION', '1.4.4');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 function tc_video_chat_install() {
@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
 <h2>Tinychat Video Chat</h2>
 <br>
 <form method="post" class="form">
-<input type="text" name="room" title="Enter Room Name, If it does not exist then it will create the room for you." tabindex="1" placeholder="Just enter the name of the Tinychat room" autofocus required/>
+<input type="text" name="room" title="Enter Room Name, If it does not exist then it will create the room for you." tabindex="1" placeholder="Tinychat room name" autofocus required/>
 <input type="submit" class="button2" value="Chat"/></form>
 <br>
 <p>To watch YouTube video’s please use Firefox or Edge browsers, These have been tested and they’re working with videos.</p>
@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
     </div>
 <h2>Popular Rooms</h2>
 <br>
-<h3>beautifulpeople | theglobmob | th3psychward | thesweetspot | phatbooty35 | ruddernation | jasper1 | ziggystardst | monachechat</h3>
+<h3>beautifulpeople | theglobmob | th3psychward | thesweetspot | phatbooty35 | jasper1 | parentaladvisory | universalstudios</h3>
 <?php
 	$room = filter_input(INPUT_POST, 'room');
 	if(preg_match('/^[a-z0-9]/', $room=strtolower($room))) 
@@ -102,6 +102,7 @@ jQuery(document).ready(function() {
 	width: 100%;
     height: 100%;
 	position:fixed;
+    top:0;
 	left:0px;
 	right:0px;
 	bottom:0px;
