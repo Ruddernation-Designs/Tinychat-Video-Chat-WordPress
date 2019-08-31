@@ -4,8 +4,8 @@ Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 4.6
-Tested up to: 5.2
-Stable tag: 1.4.2
+Tested up to: 5.2.2
+Stable tag: 1.4.5
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -147,6 +147,9 @@ License is now MIT so feel free to carry this plugin on, Just ask me to add you 
 
 * Tested up to Wordpress 5.2 with no issues
 
+= 1.4.5 =
+
+* Minor CSS Update.
 
 == Social Sites ==
 
