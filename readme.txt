@@ -4,14 +4,14 @@ Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 4.6
-Tested up to: 5.2.2
-Stable tag: 1.4.5
+Tested up to: 5.3
+Stable tag: 1.4.7
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
 
-* To watch YouTube video’s please use Firefox or Edge browsers, These have been tested and they’re working with videos.
+* To watch YouTube video's please use Firefox or Edge browsers, These have been tested and they’re working with videos.
 Now updated to the new version of Tinychat using HTML5 WebRTC!
 TinyChat full screen video chat for WordPress/BuddyPress, 
 This advanced version allows you to add your own room name.
@@ -151,6 +151,16 @@ License is now MIT so feel free to carry this plugin on, Just ask me to add you 
 
 * Minor CSS Update.
 
+= 1.4.6 =
+
+* Tested upto 5.2.3 and there are no issues.
+
+= 1.4.7 =
+
+* Tested upto version 5.3 beta, currently everything works as normal.
+Update the rooms to show some new rooms.
+
+
 == Social Sites ==
 
 * Tinychat - https://www.tinychat.cf
@@ -162,3 +172,5 @@ License is now MIT so feel free to carry this plugin on, Just ask me to add you 
 * GitHub - https://github.com/Ruddernation-Designs
 
 * WordPress - https://profiles.wordpress.org/ruddernationdesigns
+
+* Stack Overflow  - http://stackoverflow.com/users/5774880/ruddernation-designs
