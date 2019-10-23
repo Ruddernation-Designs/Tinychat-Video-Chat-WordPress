@@ -6,13 +6,13 @@
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
 * Requires at least: WordPress 4.6, BuddyPress 4.0
-* Tested up to: WordPress 5.2.2, BuddyPress 4.4.0
-* Version: 1.4.5
+* Tested up to: WordPress 5.2.3, BuddyPress 5.0.0
+* Version: 1.4.7
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 30th August 2019
+* Date: 23rd October 2019
 */
-define('COMPARE_VERSION', '1.4.4');
+define('COMPARE_VERSION', '1.4.6');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 function tc_video_chat_install() {
@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
     </div>
 <h2>Popular Rooms</h2>
 <br>
-<h3>beautifulpeople | theglobmob | th3psychward | thesweetspot | phatbooty35 | jasper1 | parentaladvisory | universalstudios</h3>
+<h3>templeofdebate | bootyandtitties | 1psychward1 | treehouse | celebritystatus | jasper1 | potpartyfamily | gold</h3>
 <?php
 	$room = filter_input(INPUT_POST, 'room');
 	if(preg_match('/^[a-z0-9]/', $room=strtolower($room))) 
