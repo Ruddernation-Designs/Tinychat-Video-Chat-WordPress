@@ -1,26 +1,31 @@
 <?php
 /*
-* Plugin Name: Tinychat Video Chat
+* Plugin Name: Tinychat Video Chat (HTML5)
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
 * Requires at least: WordPress 4.6, BuddyPress 4.0
-* Tested up to: WordPress 5.2.3, BuddyPress 5.0.0
-* Version: 1.4.7
+* Tested up to: WordPress 5.3.2
+* Version: 1.5.1
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 23rd October 2019
+* Date: 01st January 2020
 */
-define('COMPARE_VERSION', '1.4.6');
+
+define('COMPARE_VERSION', '1.5.0');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
 register_activation_hook(__FILE__, 'tc_video_chat_install');
+
 function tc_video_chat_install() {
+	
 	global $wpdb, $wp_version;
 	$post_date = date("Y-m-d H:i:s");
 	$post_date_gmt = gmdate("Y-m-d H:i:s");
 	$sql = "SELECT * FROM ".$wpdb->posts." WHERE post_content LIKE '%[tc_video_chat_page]%' AND `post_type` NOT IN('revision') LIMIT 1";
 	$page = $wpdb->get_row($sql, ARRAY_A);
+	
 	if($page == NULL) {
 		$sql ="INSERT INTO ".$wpdb->posts."(
 			post_author, post_date, post_date_gmt, post_content, post_content_filtered, post_title, post_excerpt,  post_status, comment_status, ping_status, post_password, post_name, to_ping, pinged, post_modified, post_modified_gmt, post_parent, menu_order, post_type)
@@ -28,89 +33,99 @@ VALUES ('1', '$post_date', '$post_date_gmt', '[tc_video_chat_page]', '', 'Tinych
 		$wpdb->query($sql);
 		$post_id = $wpdb->insert_id;
 		$wpdb->query("UPDATE $wpdb->posts SET guid = '" . get_permalink($post_id) . "' WHERE ID = '$post_id'");
-	} else {
+		
+	}
+	
+	else
+		
+	{
+		
 		$post_id = $page['ID'];
+		
 	}
+	
 	update_option('tc_video_chat_url', get_permalink($post_id));
+	
 }
+
 add_filter('the_content', 'wp_show_tc_video_chat_page', 222);
+
 function wp_show_tc_video_chat_page($content = '') {
+	
 	if(preg_match("/\[tc_video_chat_page\]/",$content)) {
+		
 		wp_show_tc_video_chat();
+		
 		return "";
+		
 	}
+	
 	return $content;
+	
 }
+
 function wp_show_tc_video_chat() {
+	
 	if(!get_option('tc_video_chat_enabled', 0)) {
+		
 	}
+	
 ?>
-<script src="https://cdn.ruddernation.com/js/jquery.js"></script>
-<script>
-jQuery(document).ready(function() {
-    $('.info')
-        .find('.chatinfo')
-            .hide()
-            .end()
-        .find('.main')
-            .click( function(){
-                $(this).siblings('.chatinfo')
-                .slideToggle();
-            });
-});
-</script>
+
 <h2>Tinychat Video Chat</h2>
 <br>
 <form method="post" class="form">
 <input type="text" name="room" title="Enter Room Name, If it does not exist then it will create the room for you." tabindex="1" placeholder="Tinychat room name" autofocus required/>
 <input type="submit" class="button2" value="Chat"/></form>
 <br>
-<p>To watch YouTube video’s please use Firefox or Edge browsers, These have been tested and they’re working with videos.</p>
-    <div class="info">                              
-        <h3 class="main" title="Click Me!">Click me!</h3>             
-        <p  class="chatinfo">
-			<strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
+<p>To watch YouTube videos please use Firefox/Edge/Opera browsers, These have been tested and the videos work on each of them.</p><br>
 
-	It also has YouTube so you can play your videos, There are also hundreds of registered/unregistered chat rooms that you can visit and they normally contain and average of 32 chatters,<br>
+<strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
+	It also has YouTube so you can play your videos, There are hundreds of registered &amp; unregistered chat rooms that you can join.
+	<br>
+	Simply enter your room name in to the form above and start chatting!<br>
+				The most popular rooms are below.<br>
+				<h3>cannachat | phatbootypbq2 | cheerseverybody | gts3 | celebritystatus | pure | teatimechat | wfam | freezone | glitchify | thebonfire</h3>
+	</strong>
+</p>   
 
-	Simply enter your room name in to the form above and start chatting!.<br>
-	</strong></p>   
-    </div>
-<h2>Popular Rooms</h2>
-<br>
-<h3>templeofdebate | bootyandtitties | 1psychward1 | treehouse | celebritystatus | jasper1 | potpartyfamily | gold</h3>
 <?php
 	$room = filter_input(INPUT_POST, 'room');
+	
 	if(preg_match('/^[a-z0-9]/', $room=strtolower($room))) 
+		
 	{
+		
 		$room=preg_replace('/[^a-zA-Z0-9]/','',$room);
+		
 		{
+			
 		if (strlen($room) < 3)
+			
 		{
+			
 			echo '<p>The Tinychat room needs to be more than 3 characters.</p>'; 
+			
 		}
+			
 		else
+			
 			if (strlen($room) > 32) 
+				
 			{
-				echo '<p>The Tinychat room needs to be less than 26 characters.</p>';
+				
+				echo '<p>The Tinychat room needs to be less than 32 characters.</p>';
+				
 			} 
+			
 		else
+			
 		{
-			echo '
-				<style>
-	iframe {
-	width: 100%;
-    height: 100%;
-	position:fixed;
-    top:0;
-	left:0px;
-	right:0px;
-	bottom:0px;
-	z-index:99999999999999;
-	}
-</style>
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="97%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
+			
+			echo '<style>iframe {width: 100%;height: 100%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999;}</style>
+				
+<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
             }
-        }
-									}
-										}?>
+					}
+							}
+									}?>
