@@ -1,11 +1,11 @@
-=== Tinychat Video Chat ===
+=== Tinychat Video Chat (HTML5) ===
 
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 4.6
-Tested up to: 5.3
-Stable tag: 1.4.7
+Tested up to: 5.3.2
+Stable tag: 1.5.1
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -159,6 +159,14 @@ License is now MIT so feel free to carry this plugin on, Just ask me to add you 
 
 * Tested upto version 5.3 beta, currently everything works as normal.
 Update the rooms to show some new rooms.
+
+= 1.4.8 =
+
+* Removal of certain rooms and addition of newer ones as requested.
+
+= 1.4.9 =
+
+* Renamed the plugin.
 
 
 == Social Sites ==
