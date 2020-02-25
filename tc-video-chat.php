@@ -1,19 +1,19 @@
 <?php
 /*
-* Plugin Name: Tinychat Video Chat (HTML5)
+* Plugin Name: Tinychat Video Chat
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
 * Requires at least: WordPress 4.6, BuddyPress 4.0
 * Tested up to: WordPress 5.3.2
-* Version: 1.5.1
+* Version: 1.5.5
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 01st January 2020
+* Date: 25th February 2020
 */
 
-define('COMPARE_VERSION', '1.5.0');
+define('COMPARE_VERSION', '1.5.4');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
@@ -122,9 +122,9 @@ function wp_show_tc_video_chat() {
 			
 		{
 			
-			echo '<style>iframe {width: 100%;height: 100%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999;}</style>
+			echo '<style>iframe {width: 100%;height: 98%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999;}</style>
 				
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
+<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="98%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
             }
 					}
 							}
