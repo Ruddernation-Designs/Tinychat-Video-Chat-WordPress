@@ -1,18 +1,15 @@
-=== Tinychat Video Chat - GitHub only ===
+=== HTML5 Video Chat - Tinychat ===
 
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 4.6
-Tested up to: 5.3.2
-Stable tag: 1.5.5
+Tested up to: 5.4
+Stable tag: 1.5.6
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
-
-As I'm unable to help users via the support section I am no longer maintaining this on WordPress,
-If you wish to have an up to date version then could you please use my GitHub page and post issues there please,
 
 * To watch YouTube video's please use Firefox or Edge browsers, These have been tested and they’re working with videos.
 Now updated to the new version of Tinychat using HTML5 WebRTC!
@@ -181,7 +178,13 @@ Update the rooms to show some new rooms.
 
 = 1.5.5 =
 
-* I'm no longer maintaining this on WordPress as I'm unable to help users on the Wordpress support section because the Wordpress moderators are ridiculous, I apologise in advance for all the users asking for support, I have tried to help but my replies kept getting deleted.
+* Minor updates and clean up of recommended rooms, 
+YouTube videos work when using any browser other than Google Chrome, recommend using Firefox or Microsoft Edge.
+
+= 1.5.6 =
+
+* Tested upto WP 5.4 without issues, There has also been a name change, You can now contact me with my details below.
+
 
 == Social Sites ==
 
@@ -196,3 +199,7 @@ Update the rooms to show some new rooms.
 * WordPress - https://profiles.wordpress.org/ruddernationdesigns
 
 * Stack Overflow  - http://stackoverflow.com/users/5774880/ruddernation-designs
+
+== Contact Details ==
+
+* Email - support@ruddernation.com - Any issues then please contact me here.
