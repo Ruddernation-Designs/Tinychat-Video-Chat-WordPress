@@ -4,15 +4,16 @@
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
-* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, To use YouTube then use Firefox or Edge browsers as the videos work then and you can also select to play a video, Do not use Chrome!
+* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, Tinychat have now removed YouTube, Hopefully this is temporary,
+You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that.
 * Requires at least: WordPress 4.6, BuddyPress 4.0
-* Tested up to: WordPress 5.4
-* Version: 1.5.6
+* Tested up to: WordPress 5.4.2
+* Version: 1.6.0
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 09th March 2020
+* Date: 12th June 2020
 */
-define('COMPARE_VERSION', '1.5.5');
+define('COMPARE_VERSION', '1.5.9');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
@@ -60,7 +61,7 @@ function wp_show_tc_video_chat() {
 <p>To watch YouTube videos please use Firefox/Edge/Opera browsers, These have been tested and the videos work on them.</p><br>
 
 <strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
-	It also has YouTube so you can play your videos, There are hundreds of registered &amp; unregistered chat rooms that you can join.
+	There are hundreds of registered &amp; unregistered chat rooms that you can join.
 	</strong>
 </p>   
 <?php
@@ -80,9 +81,9 @@ function wp_show_tc_video_chat() {
 			} 
 		else
 		{
-			echo '<style>iframe {width: 100%;height: 98%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999;}</style>
+			echo '<style>iframe {width: 100%;height: 98%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999999;}</style>
 				
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="98%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
+<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="98%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
             }
 					}
 							}
