@@ -3,15 +3,18 @@
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
-Requires at least: 4.6
-Tested up to: 5.4
-Stable tag: 1.5.6
+Requires at least: 5.0+
+Tested up to: 5.4.2
+Stable tag: 1.5.9
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
 
-* To watch YouTube video's please use Firefox or Edge browsers, These have been tested and they’re working with videos.
+You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that.
+
+Tinychat have now removed YouTube, Hopefully this is temporary.
+
 Now updated to the new version of Tinychat using HTML5 WebRTC!
 TinyChat full screen video chat for WordPress/BuddyPress, 
 This advanced version allows you to add your own room name.
@@ -53,6 +56,10 @@ Simply use shortcode [tc_video_chat_page] in a page.
 
 * Now the chat will load like so.
 
+* Click the settings button.
+
+* Toggle dark mode on and you are all set!
+
 
 == Notes ==
 
@@ -67,6 +74,9 @@ This is full screen video chat that is used on TinyChat.
 * Q. How do I add it to my blog/website?
 
 * A. Just go to the backend and on appearance select menus, From there you can add your page, It'll be *chatroom-advanced* by default.
+
+* Q. Does this have dark mode?
+* A. Yes, check the images on how to do it.
 
 == Changelog ==
 
@@ -185,10 +195,21 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 
 * Tested upto WP 5.4 without issues, There has also been a name change, You can now contact me with my details below.
 
+= 1.5.7 =
+
+* You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that.
+
+= 1.5.8 =
+
+* Tinychat have now removed YouTube, Hopefully this is temporary.
+
+= 1.5.9 =
+
+* I've now added instructions via the images on how to access 'Dark Mode'.
 
 == Social Sites ==
 
-* Tinychat - https://www.tinychat.uk
+* Tinychat - https://www.afcsh.org.uk
 
 * Developers Website - https://www.ruddernation.com
 
@@ -199,6 +220,12 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 * WordPress - https://profiles.wordpress.org/ruddernationdesigns
 
 * Stack Overflow  - http://stackoverflow.com/users/5774880/ruddernation-designs
+
+* Special thanks to Tinychat - https://tinychat.com
+
+* Privacy Policy for Ruddernation Designs - https://www.ruddernation.com/privacy-policy/
+
+* Privacy Policy for Tinychat - https://tinychat.com/privacy.html
 
 == Contact Details ==
 
