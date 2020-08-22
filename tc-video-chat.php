@@ -7,13 +7,13 @@
 * Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, Tinychat have now removed YouTube, Hopefully this is temporary,
 You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that.
 * Requires at least: WordPress 4.6, BuddyPress 4.0
-* Tested up to: WordPress 5.4.2
-* Version: 1.6.0
+* Tested up to: WordPress 5.5
+* Version: 1.6.4
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 12th June 2020
+* Date: 06th August 2020
 */
-define('COMPARE_VERSION', '1.5.9');
+define('COMPARE_VERSION', '1.6.3');
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
@@ -81,9 +81,9 @@ function wp_show_tc_video_chat() {
 			} 
 		else
 		{
-			echo '<style>iframe {width: 100%;height: 98%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999999;}</style>
+			echo '<style>iframe {width: 100%;height: 100%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999999;}</style>
 				
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="98%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
+<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
             }
 					}
 							}
