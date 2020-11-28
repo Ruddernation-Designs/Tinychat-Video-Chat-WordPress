@@ -3,9 +3,9 @@
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
-Requires at least: 5.0+
+Requires at least: 2.0
 Tested up to: 5.5
-Stable tag: 1.6.4
+Stable tag: 1.6.5
 License: GNUv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -17,7 +17,7 @@ This may only be affecting some users.
 
 You now have to register to use the chat, you can do that at <a href="https://tinychat.com" rel="nofollow ugc" >Tinychat</a> , I apologise about that.
 
-Tinychat have now removed YouTube, Hopefully this is temporary.
+YouTube is back!
 
 Now updated to the new version of Tinychat using HTML5 WebRTC!
 TinyChat full screen video chat for WordPress/BuddyPress, 
@@ -215,21 +215,11 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 
 * <a href="https://www.ruddernation.com"  rel="nofollow ugc">Developers Website</a>
 
-* <a href="https://www.facebook.com/rndtinychat"  rel="nofollow ugc">Facebook Page</a>
-
-* <a href="https://github.com/Ruddernation-Designs" rel="nofollow ugc">GitHub</a>
-
 * <a href="https://profiles.wordpress.org/ruddernationdesigns"  rel="nofollow ugc">WordPress</a>
-
-* <a href="http://stackoverflow.com/users/5774880/ruddernation-designs" rel="nofollow ugc">Stack Overflow</a>
-
-* <a href="https://tinychat.com" rel="nofollow ugc">Tinychat</a>
 
 * <a href="https://www.ezcapechat.cf/"  rel="nofollow ugc">Special thanks to Ezcape Chat Creators.</a>
 
 * <a href="https://www.ruddernation.com/privacy-policy/" rel="nofollow ugc">Privacy Policy for Ruddernation Designs</a>
-
-* <a href="https://tinychat.com/privacy.html" rel="nofollow ugc">Privacy Policy for Tinychat</a>
 
 == Contact Details ==
 
