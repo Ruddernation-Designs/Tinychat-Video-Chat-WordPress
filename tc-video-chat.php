@@ -1,19 +1,19 @@
 <?php
 /*
-* Plugin Name: HTML5 Video Chat - Tinychat
+* Plugin Name: Video Chat - Tinychat
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
-* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name, Tinychat have now removed YouTube, Hopefully this is temporary,
-You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that.
-* Requires at least: WordPress 2.0.0, BuddyPress 1.0.0
-* Tested up to: 5.5
-* Version: 1.6.5
+* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name,
+You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that, but the good news is YouTube is now back.
+* Requires at least: WordPress 4.0
+* Tested up to: 5.6
+* Version: 1.6.6
 * License: GNUv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 06th August 2020
+* Date: 19th December 2020
 */
-define('COMPARE_VERSION', '1.6.4');
+define('COMPARE_VERSION', '1.6.5');
 defined( 'ABSPATH' ) or die( 'I\'m gussing you\'re bored?' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
@@ -61,7 +61,8 @@ function wp_show_tc_video_chat() {
 <p>To watch YouTube videos please use Firefox/Edge/Opera browsers, These have been tested and the videos work on them.</p><br>
 
 <strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
-	There are hundreds of registered &amp; unregistered chat rooms that you can join.
+	There are hundreds of registered &amp; unregistered chat rooms that you can join,<br>
+	YouTube is now back!
 	</strong>
 </p>   
 <?php
