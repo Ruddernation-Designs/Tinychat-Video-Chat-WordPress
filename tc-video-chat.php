@@ -8,13 +8,13 @@
 You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that, but the good news is YouTube is now back.
 * Requires at least: WordPress 4.0
 * Tested up to: 5.6
-* Version: 1.6.6
-* License: GNUv3
+* Version: 1.6.7
+* License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 19th December 2020
+* Date: 24th December 2020
 */
-define('COMPARE_VERSION', '1.6.5');
-defined( 'ABSPATH' ) or die( 'I\'m gussing you\'re bored?' );
+define('COMPARE_VERSION', '1.6.6');
+defined( 'ABSPATH' ) or die( 'Merry Christmas' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 
@@ -84,7 +84,7 @@ function wp_show_tc_video_chat() {
 		{
 			echo '<style>iframe {width: 100%;height: 100%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999999;}</style>
 				
-<iframe src="https://tinychat.com/room/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
+<iframe src="https://tinychat.com/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
             }
 					}
 							}
