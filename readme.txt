@@ -5,8 +5,8 @@ Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 2.0
 Tested up to: 5.6
-Stable tag: 1.6.6
-License: GNUv3
+Stable tag: 1.6.7
+License: GNUv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
@@ -214,6 +214,10 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 = 1.6.6 =
 
 * Tested up to Wordpress 5.6 without any issues, Also, YouTube is now back!
+
+= 1.6.7 =
+
+* URL change and tested after editing the cookie from Tinychat and all works as intended.
 
 
 == Social Sites ==
