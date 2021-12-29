@@ -3,9 +3,9 @@
 Contributors: ruddernationdesigns
 Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
-Requires at least: 2.0
-Tested up to: 5.7.2
-Stable tag: 1.6.7
+Requires at least: 5.0
+Tested up to: 5.8.2
+Stable tag: 1.6.9
 License: GNUv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -16,8 +16,6 @@ You can bypass this in Chrome by searching in the developer tools, locate the co
 This may only be affecting some users.
 
 You now have to register to use the chat, you can do that at <a href="https://tinychat.com" rel="nofollow ugc" >Tinychat</a> , I apologise about that.
-
-YouTube is back!
 
 Now updated to the new version of Tinychat using HTML5 WebRTC!
 TinyChat full screen video chat for WordPress/BuddyPress, 
@@ -218,6 +216,10 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 = 1.6.7 =
 
 * URL change and tested after editing the cookie from Tinychat and all works as intended.
+
+= 1.6.9 =
+
+* I've now changed the name of the page within WordPress as it was causing an issue with page loading, page has gone from 'Tinychat Video Chat' to 'tinychat-video-chat'.
 
 
 == Social Sites ==
