@@ -4,17 +4,17 @@
 * Plugin URI: https://wordpress.org/plugins/tc-video-chat/
 * Author: Ruddernation Designs
 * Author URI: https://profiles.wordpress.org/ruddernationdesigns
-* Description: TinyChat full screen video chat for WordPress/BuddyPress in HTML5 WebRTC, This advanced version allows you to add your own room name,
-You now have to register to use the chat, you can do that at https://tinychat.com , I apologise about that, but the good news is YouTube is now back.
+* Description: TinyChat full screen video chat for WordPress using HTML5, This advanced version allows you to add your own room name,
+You now have to register to use the chat, you can do that at https://tinychat.com , I do apologise about that.
 * Requires at least: WordPress 4.0
-* Tested up to: 5.7.2
-* Version: 1.6.7
+* Tested up to: 5.8.2
+* Version: 1.6.9
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 27th May 2021
+* Date: 29 December 2021
 */
-define('COMPARE_VERSION', '1.6.6');
-defined( 'ABSPATH' ) or die( 'Merry Christmas' );
+define('COMPARE_VERSION', '1.6.8');
+defined( 'ABSPATH' ) or die( 'Almost summer time!' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 
@@ -29,7 +29,7 @@ function tc_video_chat_install() {
 	if($page == NULL) {
 		$sql ="INSERT INTO ".$wpdb->posts."(
 			post_author, post_date, post_date_gmt, post_content, post_content_filtered, post_title, post_excerpt,  post_status, comment_status, ping_status, post_password, post_name, to_ping, pinged, post_modified, post_modified_gmt, post_parent, menu_order, post_type)
-VALUES ('1', '$post_date', '$post_date_gmt', '[tc_video_chat_page]', '', 'Tinychat Video Chat', '', 'publish', 'closed', 'closed', '', 'video-chat', '', '', '$post_date', '$post_date_gmt', '0', '0', 'page')";
+VALUES ('1', '$post_date', '$post_date_gmt', '[tc_video_chat_page]', '', 'tinychat-video-chat', '', 'publish', 'closed', 'closed', '', 'video-chat', '', '', '$post_date', '$post_date_gmt', '0', '0', 'page')";
 		$wpdb->query($sql);
 		$post_id = $wpdb->insert_id;
 		$wpdb->query("UPDATE $wpdb->posts SET guid = '" . get_permalink($post_id) . "' WHERE ID = '$post_id'");
@@ -58,13 +58,9 @@ function wp_show_tc_video_chat() {
 <input type="text" name="room" title="Enter Room Name, If it does not exist then it will create the room for you." tabindex="1" placeholder="Tinychat room name" autofocus required/>
 <input type="submit" class="button2" value="Chat"/></form>
 <br>
-<p>To watch YouTube videos please use Firefox/Edge/Opera browsers, These have been tested and the videos work on them.</p><br>
-
-<strong>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
+<p>This allows you to join Tinychat chat rooms with Camera/Mic of up to 12 people,<br>
 	There are hundreds of registered &amp; unregistered chat rooms that you can join,<br>
-	YouTube is now back!
-	</strong>
-</p>   
+	YouTube is now back!</p>   
 <?php
 	$room = filter_input(INPUT_POST, 'room');
 	if(preg_match('/^[a-z0-9]/', $room=strtolower($room))) 
@@ -82,9 +78,17 @@ function wp_show_tc_video_chat() {
 			} 
 		else
 		{
-			echo '<style>iframe {width: 100%;height: 100%;position:fixed; top:0px;left:0px;right:0px;bottom:0px;z-index:9999999999;}</style>
+			echo '<style>iframe {
+			width: 100%;
+			height:100%;
+			position:fixed;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index:999999;}</style>
 				
-<iframe src="https://tinychat.com/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera; speaker;"></iframe>';
+<iframe src="https://tinychat.com/'.$room.'" name="room" frameborder="0" scrolling="no" height="100%" width="100%" allow="geolocation; microphone; camera;"></iframe>';
             }
 					}
 							}
