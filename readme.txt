@@ -1,11 +1,10 @@
 === Video Chat - Tinychat ===
 
 Contributors: ruddernationdesigns
-Donate link: https://www.paypal.me/RuddernationDesigns
 Tags: tinychat, video chat, wordpress chat, buddypress chat, wordpress video chat, buddypress video chat, chat, ruddernation
 Requires at least: 5.0
 Tested up to: 5.8.2
-Stable tag: 1.6.9
+Stable tag: 1.7.0
 License: GNUv3 
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -61,6 +60,12 @@ Simply use shortcode [tc_video_chat_page] in a page.
 * Click the settings button.
 
 * Toggle dark mode on and you are all set!
+
+* Cookie Editor.
+
+* Search for Tinychat cookies.
+
+* How to complete the cookie editing.
 
 
 == Notes ==
@@ -221,6 +226,9 @@ YouTube videos work when using any browser other than Google Chrome, recommend u
 
 * I've now changed the name of the page within WordPress as it was causing an issue with page loading, page has gone from 'Tinychat Video Chat' to 'tinychat-video-chat'.
 
+= 1.7.0 =
+
+* Added new screenshots to show the editing of the cookies.
 
 == Social Sites ==
 
