@@ -8,13 +8,13 @@
 You now have to register to use the chat, you can do that at https://tinychat.com , I do apologise about that.
 * Requires at least: WordPress 4.0
 * Tested up to: 5.8.2
-* Version: 1.6.9
+* Version: 1.7.0
 * License: GNUv3 
 * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-* Date: 29 December 2021
+* Date: 12 January 2022
 */
-define('COMPARE_VERSION', '1.6.8');
-defined( 'ABSPATH' ) or die( 'Almost summer time!' );
+define('COMPARE_VERSION', '1.6.9');
+defined( 'ABSPATH' ) or die( 'Almost spring time!' );
 
 register_activation_hook(__FILE__, 'tc_video_chat_install');
 
